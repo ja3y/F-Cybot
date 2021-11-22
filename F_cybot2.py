@@ -4,19 +4,19 @@ import subprocess
 Target = input("[+] Please Enter Your Target Ip Address : ")
 
 file1= open('/home/whoami/Desktop/lab/nmap_log.txt')
-#file2 = open('prac.txt' , 'r')
+file2 = open('prac.txt' , 'r')
 #path to the txt files for nmap result and vulnerability list
 
 def get_nmap():
     global Target
-    #makes Target variable global
+    
     com = ("nmap -sV  -p1-65535 -oN nmap_log.txt " )
     process=os.system(com + Target)
-#runs the nmap command using -sv parameter and output as txt
+
     return process
 
 get_nmap()
-#calls get_nmap function
+
 
 def unr():
     a =open('/home/whoami/Desktop/test/RC_scripts/unrealirc.rc', 'w')
